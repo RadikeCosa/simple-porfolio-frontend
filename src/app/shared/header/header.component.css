@@ -1,0 +1,29 @@
+header {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  padding: 0.2rem;
+  margin: 1rem;
+}
+.linkList {
+  display: flex;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
+li > a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.4rem;
+}

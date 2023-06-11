@@ -1,0 +1,7 @@
+.home {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.container {
+  padding: 4rem 8rem;
+}

@@ -1,0 +1,7 @@
+<div class="nav">
+  <ul class="linkList">
+    <li *ngFor="let link of data">
+      <a class="home" [routerLink]="link.route">{{ link.title }}</a>
+    </li>
+  </ul>
+</div>
