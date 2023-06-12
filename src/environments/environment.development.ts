@@ -1,3 +1,6 @@
 export const environment = {
-  apiUrl: 'http://localhost:3000',
+  APIUrl: 'http://localhost:3000',
+  HomeEndpoint: '/home',
+  LogoEndpoint: '/logo',
+  LinksEndpoint: '/links',
 };
