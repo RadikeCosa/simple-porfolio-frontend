@@ -9,12 +9,11 @@ import { HeaderService } from 'src/app/services/header.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  logo: Logo = { name: '', title: '' };
-  logoName!: string;
-  logoTitle!: string;
-
+  logo: Logo[] = [];
   links: Links[] = [];
-
+  name!: string;
+  lastName!: string;
+  title!: string;
   constructor(private headerService: HeaderService) {}
 
   ngOnInit() {
@@ -24,7 +23,10 @@ export class HeaderComponent {
 
   public logoData() {
     this.headerService.getLogoData().subscribe((respuesta) => {
-      this.logo = respuesta as Logo;
+      this.logo = respuesta as Logo[];
+      this.name = this.logo[0].name;
+      this.lastName = this.logo[0].lastName;
+      this.title = this.logo[0].title;
     });
   }
 

@@ -12,6 +12,11 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
 import { MainComponent } from './components/main/main.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { LinksComponent } from './components/links/links.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { HeaderLinksFormComponent } from './forms/header-links-form/header-links-form.component';
+import { HeaderLogoFormComponent } from './forms/header-logo-form/header-logo-form.component';
+import { HomeMainFormComponent } from './forms/home-main-form/home-main-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const Components = [
   AppComponent,
@@ -20,10 +25,23 @@ const Components = [
   PorfolioComponent,
   SkillsComponent,
   PageNotFoundComponent,
+  MainComponent,
+  LogoComponent,
+  LinksComponent,
+  DashboardComponent,
+  HeaderLinksFormComponent,
+  HeaderLogoFormComponent,
+  HomeMainFormComponent,
 ];
 @NgModule({
-  declarations: [Components, MainComponent, LogoComponent, LinksComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [Components],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

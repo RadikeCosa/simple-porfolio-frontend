@@ -1,6 +1,6 @@
 export const environment = {
-  APIUrl: 'http://localhost:3000',
-  HomeEndpoint: '/home',
-  LogoEndpoint: '/logo',
-  LinksEndpoint: '/links',
+  APIUrl: 'https://backend-porfolio-1am7.onrender.com/',
+  HomeEndpoint: 'porfolio-service/home',
+  LogoEndpoint: 'porfolio-service/logo',
+  LinksEndpoint: 'porfolio-service/links',
 };

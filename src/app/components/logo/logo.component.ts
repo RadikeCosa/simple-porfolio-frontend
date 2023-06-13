@@ -7,5 +7,7 @@ import { Logo } from 'src/app/models/logo';
   styleUrls: ['./logo.component.css'],
 })
 export class LogoComponent {
-  @Input() data!: Logo;
+  @Input() name!: string;
+  @Input() lastName!: string;
+  @Input() title!: string;
 }

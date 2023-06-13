@@ -10,6 +10,8 @@ export class HomeService {
   private APIUrl = environment.APIUrl;
   constructor(private http: HttpClient) {}
   public getHomeData() {
-    return this.http.get<Main[]>('http://localhost:3000/home');
+    return this.http.get<Main[]>(
+      'https://backend-porfolio-1am7.onrender.com/porfolio-service/logo/'
+    );
   }
 }

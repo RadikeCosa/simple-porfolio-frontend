@@ -1,26 +1,47 @@
 {
   "logo": {
-    "name": "Ramiro Cosa",
-    "title": "Developer"
+    "name": "Rami ",
+    "lastName": "Cosa",
+    "title": "",
+    "imageUrl": "",
+    "iconUrl": ""
   },
-
   "links": [
-    { "id": 0, "title": "HOME", "route": "home" },
-    { "id": 1, "title": "PORFOLIO", "route": "porfolio" },
-    { "id": 2, "title": "SKILLS", "route": "skills" }
+    {
+      "id": 0,
+      "title": "HOME",
+      "route": "home",
+      "icon": ""
+    },
+    {
+      "id": 1,
+      "title": "PORFOLIO",
+      "route": "porfolio",
+      "icon": ""
+    },
+    {
+      "id": 2,
+      "title": "SKILLS",
+      "route": "skills",
+      "icon": ""
+    }
   ],
   "home": [
     {
       "id": 0,
-      "primary": "Frase primaria para construir el main del porfolio, es de un solo parrafo y mas o menos de esta extension",
-      "secondary": "Esta es la frase secundaria y puede ser agregada como un segundo parrafo o una aclaracion",
-      "tertiary": "Podria ser una caption i guess"
+      "title1": "Frase primaria para construir el main del porfolio, es de un solo parrafo y mas o menos de esta extension",
+      "title2": "Esta es la frase secundaria y puede ser agregada como un segundo parrafo o una aclaracion",
+      "title3": "Podria ser una caption i guess",
+      "image": "",
+      "icon": ""
     },
     {
       "id": 1,
-      "primary": "Primary sentence to build the main section of the portfolio, it's a single paragraph and approximately this length.",
-      "secondary": "This is the secondary sentence and can be added as a second paragraph or clarification.",
-      "tertiary": "It could be a caption, I suppose."
+      "title1": "Primary sentence to build the main section of the portfolio, it's a single paragraph and approximately this length.",
+      "title2": "This is the secondary sentence and can be added as a second paragraph or clarification.",
+      "title3": "It could be a caption, I suppose.",
+      "image": "",
+      "icon": ""
     }
   ]
 }
