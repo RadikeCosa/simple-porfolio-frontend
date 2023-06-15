@@ -5,6 +5,9 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { PorfolioComponent } from './pages/porfolio/porfolio.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { HeaderLogoFormComponent } from './forms/header-logo-form/header-logo-form.component';
+import { HeaderLinksFormComponent } from './forms/header-links-form/header-links-form.component';
+import { HomeMainFormComponent } from './forms/home-main-form/home-main-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,6 +24,18 @@ const routes: Routes = [
     component: PorfolioComponent,
   },
   { path: 'dash', component: DashboardComponent },
+  {
+    path: 'logoform',
+    component: HeaderLogoFormComponent,
+  },
+  {
+    path: 'linkform',
+    component: HeaderLinksFormComponent,
+  },
+  {
+    path: 'homeform',
+    component: HomeMainFormComponent,
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 

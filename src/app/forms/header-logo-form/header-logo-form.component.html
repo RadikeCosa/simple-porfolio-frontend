@@ -1,19 +1,27 @@
 <div class="container">
   <form [formGroup]="logoForm" (ngSubmit)="sendLogoData()">
-    <label>Name</label>
-    <input type="text" formControlName="name" />
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name" />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" formControlName="lastName" />
+    </div>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" formControlName="title" />
+    </div>
 
-    <label>Last Name</label>
-    <input type="text" formControlName="lastName" />
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      <input type="text" id="image" formControlName="image" />
+    </div>
 
-    <label>Title</label>
-    <input type="text" formControlName="title" />
-
-    <label>Image URL</label>
-    <input type="text" formControlName="imageUrl" />
-
-    <label>Icon URL</label>
-    <input type="text" formControlName="iconUrl" />
+    <div class="form-group">
+      <label for="logo">Logo URL</label>
+      <input type="text" id="logo" formControlName="logo" />
+    </div>
 
     <button type="submit">Submit</button>
   </form>

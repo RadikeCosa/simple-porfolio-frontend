@@ -1,11 +1,13 @@
 {
-  "logo": {
-    "name": "Rami ",
-    "lastName": "Cosa",
-    "title": "",
-    "imageUrl": "",
-    "iconUrl": ""
-  },
+  "logo": [
+    {
+      "name": "Rami ",
+      "lastName": "Cosa",
+      "title": "",
+      "imageUrl": "",
+      "iconUrl": ""
+    }
+  ],
   "links": [
     {
       "id": 0,

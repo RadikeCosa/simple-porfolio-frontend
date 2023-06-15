@@ -1,0 +1,24 @@
+.dashboard {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dashboard-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dashboard-button:hover {
+  background-color: var(--color-secondary);
+}

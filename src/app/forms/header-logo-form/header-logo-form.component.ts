@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HeaderService } from '../../services/header.service';
+import { Logo } from 'src/app/models/logo';
 
 @Component({
   selector: 'app-header-logo-form',
@@ -19,13 +20,13 @@ export class HeaderLogoFormComponent implements OnInit {
       name: '',
       lastName: '',
       title: '',
-      imageUrl: '',
-      iconUrl: '',
+      image: '',
+      logo: '',
     });
   }
 
   sendLogoData() {
-    const logoData = this.logoForm.value;
+    const logoData: Logo = this.logoForm.value;
     this.headerService.sendLogoData(logoData).subscribe(
       (response) => {
         // Handle success response

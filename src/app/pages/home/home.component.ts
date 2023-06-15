@@ -8,8 +8,8 @@ import { Main } from 'src/app/models/main';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  mainDataArray: Main[] = [];
-  mainData!: string;
+  mainDataArray!: Main[];
+  mainTitle!: string;
 
   constructor(private homeService: HomeService) {}
 
@@ -20,7 +20,7 @@ export class HomeComponent {
   getHomeData(): void {
     this.homeService.getHomeData().subscribe((data: Main[]) => {
       this.mainDataArray = data as Main[];
-      this.mainData = this.mainDataArray[0].primary;
+      this.mainTitle = this.mainDataArray[0].title1;
     });
   }
 }

@@ -1,1 +1,13 @@
-<p>header-links-form works!</p>
+<div class="container">
+  <form [formGroup]="linksForm" (ngSubmit)="createLink()">
+    <div class="link">
+      <label for="title">Link 1</label>
+      <input type="text" formControlName="title" id="title" />
+    </div>
+    <div class="link">
+      <label for="route">Route</label>
+      <input type="text" formControlName="route" id="route" />
+    </div>
+    <button type="submit">Create Link</button>
+  </form>
+</div>
