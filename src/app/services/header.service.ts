@@ -19,14 +19,27 @@ export class HeaderService {
     return this.http.get<Logo[]>(this.APIUrl + this.LogoEndpoint);
   }
 
+  public sendLogoData(logoData: Logo) {
+    return this.http.put(this.APIUrl + this.LogoEndpoint + '/15', logoData);
+  }
+
   public getLinks() {
     return this.http.get<Links[]>(this.APIUrl + this.LinksEndpoint);
   }
 
-  public sendLogoData(logoData: Logo) {
-    return this.http.put(this.APIUrl + this.LogoEndpoint + '/15', logoData);
+  public getLink(id: number) {
+    return this.http.get<Links>(this.APIUrl + this.LinksEndpoint + id);
   }
+
   public createLink(link: Links) {
     return this.http.post(this.APIUrl + this.LinksEndpoint, link);
+  }
+
+  public updateLink(id: number, link: Links) {
+    return this.http.put(this.APIUrl + this.LinksEndpoint + id, link);
+  }
+
+  public deleteLink(id: number) {
+    return this.http.delete(this.APIUrl + this.LinksEndpoint + id);
   }
 }

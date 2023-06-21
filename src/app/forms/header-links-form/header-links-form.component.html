@@ -1,13 +1,52 @@
 <div class="container">
-  <form [formGroup]="linksForm" (ngSubmit)="createLink()">
-    <div class="link">
-      <label for="title">Link 1</label>
-      <input type="text" formControlName="title" id="title" />
+  <table>
+    <caption>
+      List of Links
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Route</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let link of links; let i = index" (click)="selectLink(link)">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ link.title }}</td>
+        <td>{{ link.route }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section *ngIf="selectedLink">
+    <div>
+      <button (click)="deleteLink()">Eliminar</button>
+      <button (click)="cancelSelection()">Cancelar selección</button>
     </div>
-    <div class="link">
-      <label for="route">Route</label>
-      <input type="text" formControlName="route" id="route" />
+
+    <div>
+      <h2>Link Seleccionado</h2>
+      <p>
+        <strong>Title:</strong> <span>{{ selectedLink.title }}</span>
+      </p>
+      <p>
+        <strong>Route:</strong> <span>{{ selectedLink.route }}</span>
+      </p>
     </div>
-    <button type="submit">Create Link</button>
-  </form>
+  </section>
+
+  <section *ngIf="!selectedLink">
+    <form [formGroup]="linksForm">
+      <div>
+        <label for="title">Título:</label>
+        <input type="text" id="title" formControlName="title" />
+      </div>
+      <div>
+        <label for="route">Ruta:</label>
+        <input type="text" id="route" formControlName="route" />
+      </div>
+      <button (click)="createLink()">Crear Enlace</button>
+    </form>
+  </section>
 </div>

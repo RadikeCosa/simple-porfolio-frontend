@@ -1,0 +1,101 @@
+body {
+  font-family: "Arimo", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: var(--color-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container h3 {
+  color: var(--color-primary);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container .title1,
+.container .title2,
+.container .title3 {
+  color: var(--color-primary);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.container .image {
+  margin-bottom: 10px;
+}
+
+.container .icon {
+  color: var(--color-tertiary);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form h3 {
+  color: var(--color-primary);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form div {
+  margin-bottom: 10px;
+}
+
+.form label {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.form input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* Accessibility Styles */
+
+label {
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+button[type="submit"]:focus {
+  outline: 2px solid var(--color-tertiary);
+}
