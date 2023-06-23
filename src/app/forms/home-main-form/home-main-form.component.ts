@@ -37,7 +37,6 @@ export class HomeMainFormComponent implements OnInit {
       (respuesta) => {
         if (respuesta.length > 0) {
           this.mainData = respuesta as Main[]; // Asignar los datos recibidos a la variable mainData
-          this.homeForm.patchValue(this.mainData); // Rellenar el formulario con los valores recibidos
         }
       },
       (error) => {

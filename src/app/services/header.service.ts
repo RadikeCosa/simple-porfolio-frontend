@@ -20,7 +20,7 @@ export class HeaderService {
   }
 
   public sendLogoData(logoData: Logo) {
-    return this.http.put(this.APIUrl + this.LogoEndpoint + '/15', logoData);
+    return this.http.put(`${this.APIUrl}${this.LogoEndpoint + '1'}`, logoData);
   }
 
   public getLinks() {

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { Main } from '../models/main';
 import { environment } from 'src/environments/environment';
@@ -25,6 +24,6 @@ export class HomeService {
     });
   }
   public updateHomeData(main: Main) {
-    return this.http.put(`${this.APIUrl}${this.HomeEndpoint + '26'}`, main);
+    return this.http.put(`${this.APIUrl}${this.HomeEndpoint + '5'}`, main);
   }
 }
